@@ -35,6 +35,7 @@ trait RedirectsUsers
      */
     public function redirectIfVerificationFails()
     {
+        // add coment for test
         return property_exists($this, 'redirectIfVerificationFails') ? $this->redirectIfVerificationFails : route('email-verification.error');
     }
 }
